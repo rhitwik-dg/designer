@@ -7,7 +7,7 @@ const programsData = [
         location: "Isha Yoga center, Coimbatore, India",
         type: "In-Person",
         isPaid: true,
-        image: "placeholder"
+        image: "sadhguru.png"
     },
     {
         id: 2,
@@ -16,7 +16,7 @@ const programsData = [
         location: "Isha Yoga center, New Delhi, India",
         type: "Online",
         isPaid: true,
-        image: "placeholder"
+        image: "shivratri.png"
     },
     {
         id: 3,
@@ -25,7 +25,7 @@ const programsData = [
         location: "Isha Yoga center, Bengaluru, India",
         type: "Online",
         isPaid: false,
-        image: "placeholder"
+        image: "samyama.png"
     },
     {
         id: 4,
@@ -34,7 +34,7 @@ const programsData = [
         location: "Isha Yoga center, Bengaluru, India",
         type: "In-Person",
         isPaid: true,
-        image: "placeholder"
+        image: "sadhguru.png"
     },
     {
         id: 5,
@@ -43,7 +43,7 @@ const programsData = [
         location: "Isha Yoga center, New Delhi, India",
         type: "In-Person",
         isPaid: true,
-        image: "placeholder"
+        image: "sadhguru.png"
     },
     {
         id: 6,
@@ -52,7 +52,7 @@ const programsData = [
         location: "Isha Yoga center, Coimbatore, India",
         type: "Online",
         isPaid: false,
-        image: "placeholder"
+        image: "sadhguru.png"
     }
 ];
 
@@ -193,7 +193,7 @@ function renderPrograms(programs) {
             <div class="program-card">
                 <div class="d-flex gap-3">
                     <div class="program-image">
-                        Image
+                        <img src="${program.image}" alt="${program.title}" class="img-fluid rounded">
                     </div>
                     <div class="flex-grow-1">
                         <h3 class="h5 mb-3">${program.title}</h3>
@@ -221,3 +221,4 @@ function renderPrograms(programs) {
         </div>
     `).join('');
 }
+
